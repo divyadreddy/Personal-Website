@@ -109,3 +109,7 @@ body {
 .custom-bg-color {
     background: #e6dace;
 }
+
+.container-padding {
+  padding: 20px 20px 20px 20px;
+}

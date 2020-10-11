@@ -75,7 +75,6 @@
       project_parent.appendChild(project_child);
     }
   }
-  display_content(projects, projects_parent);
   
   let experience = {
     bare: {
@@ -95,6 +94,10 @@
       lang: "Python, TensorFlow, Pandas"
     }
   };
-  let experience_parent = document.getElementById("projects");
-  display_content(experience, experience_parent);
+  let experience_parent = document.getElementById("experience");
+  if(projects_parent){
+    display_content(projects, projects_parent);
+  }else{
+    display_content(experience, experience_parent);
+  }
 });
