@@ -31,11 +31,7 @@ document.addEventListener("DOMContentLoaded", function() {
     function load_content(content_id) {
       var content = document
         .getElementById("content");
-
-// As long as <ul> has a child node, remove it
-while (content.hasChildNodes()) {  
-  content.removeChild(content.firstChild);
-}
+// content.innerHTML = '';
           console.log(content_id + ".html");
           $(function() {
             $("#content").load(content_id + ".html");
