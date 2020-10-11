@@ -8,7 +8,9 @@ document.addEventListener("DOMContentLoaded", function() {
       x.className = "topnav";
     }
   }
-  
+  $(function() {
+            $("#navbar").load("nav.html");
+          });
   
 //   $.when($.ajax(enable_navbar())).then(function () {
 //     document.getElementById("about_me").click();
