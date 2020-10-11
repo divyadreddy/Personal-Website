@@ -49,9 +49,27 @@
       lang: "PYTHON, TENSORFLOW"
     }
   };
+  let experience = {
+    bare: {
+      title: "INTERVIEWBIT, SOFTWARE DEVELOPMENT INTERN",
+      desc: "<ul><li>Developed a dashboard to monitor mentors' performance (leaderboard, graphs, etc) on the admin side</li><li>Feature to scheduling Interviews based on mentor's and mentee's convinience (A/B testing also)</li><li>Presented ideas to other teams (classroom and sales) to tackle some of the existing problems like improve student participation and turn out and many others, few of them were implemented and showed an improvement. (ideas along with the required reasearch papers to support the idea)</li><li>Analysed the feedback from mentor and mentee about the Mentee-Mentor session and improvised the session productivity.</li><li> Displayed video recording of Mentee-Mentor session, calculated various stats and analysed usefulness of the feature.</li> </ul>",
+      lang: "JavaScript, React, Ruby on Rails",
+    },
+    cnn: {
+      title: "BEINGZERO, SOFTWARE DEVELOPMENT INTERN",
+      desc:
+        "<ul><li>Built the following projects for assisting in system design course :  mini-YouTube, Coding platform, mini-Instagram, ToDo app</li><li>Google Add-on to automate sending custom emails in bulk.</li><li>Built a Chrome extension to share unlisted videos in the playlist to the given email IDs. </li></ul>",
+      lang: "JavaScript, Google AppsScript, Node.js"
+    },
+    fifth: {
+      title: "IIIT-HYDERABAD, TEACHING ASSISTANT",
+      desc: "<ul><li>Teaching Assistant under Prof CV Jawahar, for Statistical Methods in Artificial Intelligence course.</li></ul>",
+      lang: "Python, TensorFlow, Pandas"
+    }
+  };
+    
   let projects_parent = document.getElementById("projects");
   function display_content(projects, project_parent) {
-    projects_parent.innerHTML = "";
     for (let project in projects) {
       let project_child = document.createElement("div");
 
@@ -76,24 +94,6 @@
     }
   }
   
-  let experience = {
-    bare: {
-      title: "INTERVIEWBIT, SOFTWARE DEVELOPMENT INTERN",
-      desc: "<ul><li>Developed a dashboard to monitor mentors' performance (leaderboard, graphs, etc) on the admin side</li><li>Feature to scheduling Interviews based on mentor's and mentee's convinience (A/B testing also)</li><li>Presented ideas to other teams (classroom and sales) to tackle some of the existing problems like improve student participation and turn out and many others, few of them were implemented and showed an improvement. (ideas along with the required reasearch papers to support the idea)</li><li>Analysed the feedback from mentor and mentee about the Mentee-Mentor session and improvised the session productivity.</li><li> Displayed video recording of Mentee-Mentor session, calculated various stats and analysed usefulness of the feature.</li> </ul>",
-      lang: "JavaScript, React, Ruby on Rails",
-    },
-    cnn: {
-      title: "BEINGZERO, SOFTWARE DEVELOPMENT INTERN",
-      desc:
-        "<ul><li>Built the following projects for assisting in system design course :  mini-YouTube, Coding platform, mini-Instagram, ToDo app</li><li>Google Add-on to automate sending custom emails in bulk.</li><li>Built a Chrome extension to share unlisted videos in the playlist to the given email IDs. </li></ul>",
-      lang: "JavaScript, Google AppsScript, Node.js"
-    },
-    fifth: {
-      title: "IIIT-HYDERABAD, TEACHING ASSISTANT",
-      desc: "<ul><li>Teaching Assistant under Prof CV Jawahar, for Statistical Methods in Artificial Intelligence course.</li></ul>",
-      lang: "Python, TensorFlow, Pandas"
-    }
-  };
   let experience_parent = document.getElementById("experience");
   if(projects_parent){
     display_content(projects, projects_parent);

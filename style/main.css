@@ -5,13 +5,13 @@ body {
 
 .topnav {
   overflow: hidden;
-  background-color: #000000;
+  background-color: #e6dace;
 }
 
 .topnav a {
   float: left;
   display: block;
-  color: #f2f2f2;
+  color: white;
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
@@ -19,13 +19,7 @@ body {
 }
 
 .topnav a:hover {
-  background-color: #ddd;
   color: black;
-}
-
-.topnav a.active {
-  background-color: #456666;
-  color: white;
 }
 
 .topnav .icon {
@@ -33,7 +27,9 @@ body {
 }
 
 @media screen and (max-width: 600px) {
-  .topnav a:not(:first-child) {display: none;}
+  .topnav a:not(:first-child) {
+    display: none;
+  }
   .topnav a.icon {
     float: right;
     display: block;
@@ -41,7 +37,9 @@ body {
 }
 
 @media screen and (max-width: 600px) {
-  .topnav.responsive {position: relative;}
+  .topnav.responsive {
+    position: relative;
+  }
   .topnav.responsive .icon {
     position: absolute;
     right: 0;
@@ -61,10 +59,10 @@ body {
   background: linear-gradient(90deg, #e6dace 35%, #ffffff 35%);
 }
 .full-container {
-    margin: 0 !important;
-    padding: 0 !important;
-    width: 100% !important;
-    height: 100% !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  width: 100% !important;
+  height: 100% !important;
 }
 
 .bg-about-me {
@@ -74,40 +72,40 @@ body {
   background: linear-gradient(90deg, #e6dace 35%, #ffffff 35%);
 }
 .full-container {
-    margin: 0 !important;
-    padding: 0 !important;
-    width: 100% !important;
-    height: 100% !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  width: 100% !important;
+  height: 100% !important;
 }
 
 .super-big-title {
-    font-size: 4rem;
-    font-weight: 600;
+  font-size: 4rem;
+  font-weight: 600;
 }
 
 .about-me-card {
-    background: #f4ece6;
-    padding: 0;
-    border: 0;
-    border-radius: 2% !important
+  background: #f4ece6;
+  padding: 0;
+  border: 0;
+  border-radius: 2% !important;
 }
 .about-me-image-padding {
-    padding: 30px 30px 20px 20px;
+  padding: 30px 30px 20px 20px;
 }
-.about-me-line-separator{
-    margin: 16px 30%;
+.about-me-line-separator {
+  margin: 16px 30%;
 }
 .external-links {
-    padding: 10px 0px 10px 0px;
-    background: #ffffff;
-    border-radius: 2% !important;    
+  padding: 10px 0px 10px 0px;
+  background: #ffffff;
+  border-radius: 2% !important;
 }
 .black-color {
-    color: black;
+  color: black;
 }
 
 .custom-bg-color {
-    background: #e6dace;
+  background: #e6dace;
 }
 
 .container-padding {
