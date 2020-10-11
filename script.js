@@ -1,5 +1,28 @@
-/* If you're feeling fancy you can add interactivity 
-    to your site with Javascript */
+document.addEventListener('DOMContentLoaded', function() {
+$(function() {
+    $("#navbar").load("nav.html");
+  });
 
-// prints "hi" in the browser's dev tools console
-console.log("hi");
+  function myFunction() {
+    var x = document.getElementById("myTopnav");
+    if (x.className === "topnav") {
+      x.className += " responsive";
+    } else {
+      x.className = "topnav";
+    }
+  }
+  var nav_options = ["about_me", "projects", "experience", "skills"]
+  var opt
+  for (opt in nav_options) {
+  document.getElementById(opt).addEventListener('click',function ()
+{
+    console.log(opt+".html");
+  $(function() {
+    $("#content").load(opt+".html");
+  });
+ //validation code to see State field is mandatory.  
+}  ); 
+  }
+
+
+});
