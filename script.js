@@ -8,7 +8,11 @@ document.addEventListener("DOMContentLoaded", function() {
       x.className = "topnav";
     }
   }
+  $.when($.ajax(enable_navbar())).then(function () {
+    document.getElementById("about_me").click();
+  });
 
+  function enable_navbar(){
   var nav_options = ["about_me", "projects", "experience", "skills"];
   var opt;
   for (opt in nav_options) {
@@ -17,17 +21,17 @@ document.addEventListener("DOMContentLoaded", function() {
     if (document.getElementById(nav_options[opt])) {
       document
         .getElementById(nav_options[opt])
-        .addEventListener("click", function() {
-          console.log(nav_options[opt] + ".html");
+        .onclick = load_content(nav_options[opt]);
+      // document.getElementById(nav_options[opt]).onclick = displayDate;
+    }
+  }
+  }
+    function load_content(content_id) {
+          console.log(content_id + ".html");
           $(function() {
             $("#content").load(nav_options[opt] + ".html");
           });
           //validation code to see State field is mandatory.
-        });
-      // document.getElementById(nav_options[opt]).onclick = displayDate;
-    }
-  }
-  function displayDate() {
-    document.getElementById("demo").innerHTML = Date();
-  }
+        }
+   
 });
