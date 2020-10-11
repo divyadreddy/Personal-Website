@@ -54,15 +54,40 @@ body {
   }
 }
 
+.bg-about-me {
+  background: -webkit-linear-gradient(90deg, #e6dace 35%, #ffffff 35%);
+  background: -o-linear-gradient(90deg, #e6dace 35%, #ffffff 35%);
+  background: -moz-linear-gradient(90deg #e6dace 35%, #ffffff 35%);
+  background: linear-gradient(90deg, #e6dace 35%, #ffffff 35%);
+}
+.full-container {
+    margin: 0 !important;
+    padding: 0 !important;
+    width: 100% !important;
+    height: 100% !important;
+}
+
 .super-big-title {
     font-size: 4rem;
     font-weight: 600;
 }
-.about-me-image-padding {
-    padding: 30px;
+
+.about-me-card {
+    background: #f4ece6;
+    padding: 0;
+    border: 0;
+    border-radius: 2% !important
 }
-.external-links-padding {
-    padding: 0px 0px 20px 0px;
+.about-me-image-padding {
+    padding: 30px 30px 20px 20px;
+}
+.about-me-line-separator{
+    margin: 16px 30%;
+}
+.external-links {
+    padding: 10px 0px 10px 0px;
+    background: #ffffff;
+    border-radius: 2% !important;    
 }
 .black-color {
     color: black;
