@@ -1,6 +1,7 @@
 # Assignment 2 - Personal Website
 
-Link to the website -
+Link to the website - https://divyadreddy.github.io/Personal-Website/
+
 I created 3 sections:
 
 - About Me
