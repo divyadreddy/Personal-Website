@@ -53,3 +53,11 @@ body {
     text-align: left;
   }
 }
+
+.super-big-title {
+    font-size: 4rem;
+    font-weight: 600;
+}
+.about-me-image-padding {
+    padding: 30px;
+}
