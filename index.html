@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html class="w-100 h-100">
   <head>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
@@ -11,34 +11,28 @@
     />
     <link rel="stylesheet" href="style/main.css" />
   </head>
-  <body>
-      <!--       <div id="navbar"></div> -->
-      <!--       <div id="content" class="h-100"></div> -->
-      <div class="topnav" id="navbar">
-        <a
-          id="about_me"
-          href="./index.html"
-          class="active"
-          onclick="change_to_home()"
-          >About Me</a
-        >
-        <a id="projects" href="./projects.html" onclick="change_to_projects()"
-          >Projects</a
-        >
-        <a id="experience" href="./experience.html" onclick="change_to_exp()"
-          >Experience</a
-        >
-        <a id="skills" href="./skills.html" onclick="change_to_skills()"
-          >Skills</a
-        >
-        <a
-          href="javascript:void(0);"
-          class="icon"
-          onclick="change_nav_display()"
-        >
-          <i class="fa fa-bars"></i>
-        </a>
-      </div>
-      <iframe class="h-100 w-100" id="content_1" src="about_me.html"></iframe>
+  <body class="w-100 h-100">
+    <div class="topnav" id="navbar">
+      <a
+        id="about_me"
+        href="./index.html"
+        class="active"
+        onclick="change_to_home()"
+        >About Me</a
+      >
+      <a id="projects" href="./projects.html" onclick="change_to_projects()"
+        >Projects</a
+      >
+      <a id="experience" href="./experience.html" onclick="change_to_exp()"
+        >Experience</a
+      >
+      <a id="skills" href="./skills.html" onclick="change_to_skills()"
+        >Skills</a
+      >
+      <a href="javascript:void(0);" class="icon" onclick="change_nav_display()">
+        <i class="fa fa-bars"></i>
+      </a>
+    </div>
+    <iframe class="w-100 h-100" id="content_1" src="about_me.html"></iframe>
   </body>
 </html>
