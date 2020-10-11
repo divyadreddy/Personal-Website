@@ -8,6 +8,8 @@ document.addEventListener("DOMContentLoaded", function() {
       x.className = "topnav";
     }
   }
+  
+  
   $.when($.ajax(enable_navbar())).then(function () {
     document.getElementById("about_me").click();
   });
@@ -27,9 +29,16 @@ document.addEventListener("DOMContentLoaded", function() {
   }
   }
     function load_content(content_id) {
+      var content = document
+        .getElementById("content");
+
+// As long as <ul> has a child node, remove it
+while (content.hasChildNodes()) {  
+  content.removeChild(content.firstChild);
+}
           console.log(content_id + ".html");
           $(function() {
-            $("#content").load(nav_options[opt] + ".html");
+            $("#content").load(content_id + ".html");
           });
           //validation code to see State field is mandatory.
         }
