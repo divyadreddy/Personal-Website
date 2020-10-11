@@ -105,3 +105,7 @@ body {
 .black-color {
     color: black;
 }
+
+.custom-bg-color {
+    background: #e6dace;
+}
